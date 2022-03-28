@@ -1,0 +1,17 @@
+
+.logo {
+    width: 8%;
+    height:fit-content;
+}
+.navbar .nav-link {
+    font-size: 15px;
+    text-transform:uppercase;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+
+/* | boreder line */
+.navbar .nav-item.active {
+    border-left: rgb(187, 179, 179) 3px solid; 
+}
