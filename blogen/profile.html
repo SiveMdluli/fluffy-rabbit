@@ -24,7 +24,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav">
                 <li class="nav-item px-2">
-                    <a href="index.html" class="nav-link active">Dashboard</a>
+                    <a href="index.html" class="nav-link">Dashboard</a>
                 </li>
                 <li class="nav-item px-2">
                     <a href="posts.html" class="nav-link">Posts</a>
@@ -67,7 +67,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h1><i class="fas fa-cog"></i> Dashboard</h1>
+                <h1><i class="fas fa-user"></i> Edit Profile</h1>
             </div>
         </div>
     </div>
@@ -79,151 +79,64 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <a href="#" class="btn btn-primary btn-block" data-toggle="modal" data-target="#addPostModal">
-                    <i class="fas fa-plus"></i> Add Post
+                <a href="#" class="btn btn-primary btn-block" >
+                    <i class="fas fa-arrow-left"></i> Back To Dashboard
                 </a>
             </div>
 
             <div class="col-md-3">
-                <a href="#" class="btn btn-success btn-block" data-toggle="modal" data-target="#addCategoryModal">
-                    <i class="fas fa-plus"></i> Add Category
+                <a href="#" class="btn btn-success btn-block">
+                    <i class="fas fa-lock"></i> Change Password
                 </a>
             </div>
 
             <div class="col-md-3">
-                <a href="#" class="btn btn-warning btn-block" data-toggle="modal" data-target="#addUserModal">
-                    <i class="fas fa-plus"></i> Add User
+                <a href="#" class="btn btn-danger btn-block">
+                    <i class="fas fa-trash"></i> Delete Account
                 </a>
             </div>
         </div>
     </div>
 </section>
 
-<!-- POSTS -->
-<secion id="posts">
+<!-- PROFILE -->
+<secion id="profile">
     <div class="container">
         <div class="row">
            <div class="col-md-9">
                 <div class="card">
                     <div class="card-header">
-                        <H4>Latest Posts</H4>
+                        <H4>Edit Profile</H4>
                     </div>
-                    <table class="table table-striped"><!--stripess-->
-                        <thead class="thead-dark">
-                            <tr><!--TABLE HEAD, ROW&HEAD-->
-                                <th>#</th>
-                                <th>Title</th>
-                                <th>Category</th>
-                                <th>Date</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Post One</td>
-                                <td>Web Development</td>
-                                <td>May 11 2019</td>
-                                <td>
-                                    <a href="details.html" class="btn btn-secondary">
-                                        <i class="fas fa-angle-double-right"></i> Details
-                                    </a>
-                                </td>
-                            </tr>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" value="Sive Mdluli">
+                            </div>
 
-                            <tr>
-                                <td>2</td>
-                                <td>Post Two</td>
-                                <td>Web Development</td>
-                                <td>May 13 2019</td>
-                                <td>
-                                    <a href="details.html" class="btn btn-secondary">
-                                        <i class="fas fa-angle-double-right"></i> Details
-                                    </a>
-                                </td>
-                            </tr>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="text" class="form-control" value="test@test.com">
+                            </div>
 
-                            <tr>
-                                <td>3</td>
-                                <td>Post Three</td>
-                                <td>Web Development</td>
-                                <td>May 17 2019</td>
-                                <td>
-                                    <a href="details.html" class="btn btn-secondary">
-                                        <i class="fas fa-angle-double-right"></i> Details
-                                    </a>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>4</td>
-                                <td>Post Four</td>
-                                <td>Business</td>
-                                <td>May 23 2019</td>
-                                <td>
-                                    <a href="details.html" class="btn btn-secondary">
-                                        <i class="fas fa-angle-double-right"></i> Details
-                                    </a>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>5</td>
-                                <td>Post Five</td>
-                                <td>Web Development</td>
-                                <td>May 25 2019</td>
-                                <td>
-                                    <a href="details.html" class="btn btn-secondary">
-                                        <i class="fas fa-angle-double-right"></i> Details
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>6</td>
-                                <td>Post Six</td>
-                                <td>Health & Wellness</td>
-                                <td>May 29 2019</td>
-                                <td>
-                                    <a href="details.html" class="btn btn-secondary">
-                                        <i class="fas fa-angle-double-right"></i> Details
-                                    </a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            <div class="form-group">
+                                <label for="bio">Bio</label>
+                                <textarea class="from-control" name="editor1"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, sequi illo! Laboriosam omnis quisquam asperiores dolorem, quo dolore, iste quae nihil perferendis architecto cupiditate explicabo hic ratione atque. Earum quia corporis dolore temporibus expedita omnis quos voluptatibus? Ex, perferendis ut.</textarea>
+                            </div>
+                        </form>
+                    </div>
                 </div>
            </div> 
            <div class="col-md-3">
-               <div class="card text-center bg-primary text-white mb-3">
-                   <div class="card-body">
-                       <h3>Posts</h3>
-                       <h4 class="dsipaly-4">
-                           <i class="fas fa-pencil-alt"></i> 6
-                       </h4>
-                       <a href="posts.html" class="btn btn-outline-light btn-sm">View</a>
-                   </div>
-               </div>
+               <h3>Your Avatar</h3>
+               <img src="img/avatar.png" alt="" class="d-block img-fluid mb-3">
+               <button class="btn btn-primary btn-block">Edit Image</button>
+               <button class="btn btn-danger btn-block">Delete image</button>
 
-               <div class="card text-center bg-success text-white mb-3">
-                <div class="card-body">
-                    <h3>Categories</h3>
-                    <h4 class="dsipaly-4">
-                        <i class="fas fa-folder"></i> 4
-                    </h4>
-                    <a href="categories.html" class="btn btn-outline-light btn-sm">View</a>
-                </div>
-              </div>
 
-            <div class="card text-center bg-warning text-white mb-3">
-                <div class="card-body">
-                    <h3>Users</h3>
-                    <h4 class="dsipaly-4">
-                        <i class="fas fa-users"></i> 4
-                    </h4>
-                    <a href="users.html" class="btn btn-outline-light btn-sm">View</a>
-                </div>
+            
             </div>
-           </div>
         </div>
     </div>
 </secion>
