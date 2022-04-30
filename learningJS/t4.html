@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- HEAD SCRIPTS -->
+    <script>
+        function myFunction() {
+          document.getElementById("demo").innerHTML = "Paragraph changed.";
+        }
+    </script>
+    <script>
+      document.write(5 + 6);
+    </script>
+</head>
+<body>
+    <!-- 24  -->
+
+    <h1>A Web Page</h1>
+<p id="demo">A Paragraph</p>
+<button type="button" onclick="myFunction()">Try it</button>
+
+<h2>JavaScript Variables</h2>
+
+<p>The result of adding "5" + 2 + 3:</p>
+
+<p id="demo"></p>
+
+
+<!--BODY SCRIPTS-->
+<script>
+x = "5" + 2 + 3;
+document.getElementById("demo").innerHTML = x;
+</script>
+
+<script>
+  console.log(7 + 9);
+  window.alert(13 + 4);
+</script>
+
+<script>
+  var x = 5;
+  var y = 2;
+  var z = x % y;
+  document.write(z);
+</script>
+
+<script>
+  var name = "Sive";
+  var z = 4 + "5" ; //this becomes 45
+  window.alert(name);
+  console.log(z);
+</script>
+
+<script>
+var cars = ["Toyota", "Volswagon", "Mahindra", "BMW", "Porche","ISUZU"];
+
+  document.getElementById("demo").innerHTML = cars["5"];
+</script>
+
+<script>
+  var person = {
+    firstName : "Sive",
+    lastName  : "Mdluli",
+    age     : 19,
+    eyeColor  : "brown"
+  };
+  
+  document.getElementById("demo").innerHTML =
+  person.firstName + " is " + person.age + " years old.";
+  </script>
+
+
+<!-- Functions -->
+
+
+<script>
+  function toCelsius(f) {
+    return (5/9) * (f-32); //don't understand the code. Get the concept
+  }
+  document.getElementById("demo").innerHTML = toCelsius(77);
+  </script>
+</body>
+</html>
