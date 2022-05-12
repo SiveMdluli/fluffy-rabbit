@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link 
+        rel="stylesheet" 
+        href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+  <link 
+        rel="stylesheet" 
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" 
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+        
     <link rel="stylesheet" href="css/style.css">
     <title>Programming</title>
 </head>
@@ -23,7 +34,7 @@
                 </tr>
                 <tr>
                    <td>1843</td> 
-                   <td>Ada Lovelace is credited as being the first person to describe or write a computer program. In 1843, she described an algorithm to compute Bernoulli numbers using the Analytical Engine. </td>
+                   <td>Ada Lovelace was credited for being the <i>first</i> person to describe or write a computer program. Then in 1843, she described an algorithm to compute Bernoulli numbers using the Analytical Engine. </td>
                 </tr>
                 <tr>
                 <td>1889</td>
@@ -56,27 +67,89 @@
                 <tr>
                     <td>1991</td>
                     <td>	Development of Python was started in 1989 by Guido van Rossum and released to the public in 1991.
-                    </td><!--ROW 4-->
+                    </td>
                 </tr>
 
                 <tr>
                     <td>1994</td>
                     <td>The concept of CSS was started by Håkon Wium Lie in 1994. W3C introduced the specification for CSS in 1996.
-                    </td><!--ROW 4-->
+                    </td>
                 </tr>
 
                 <tr>
                     <td>1995</td>
                     <td>Java was developed by James Gosling and other developers at Sun Microsystems, and was first introduced to the public in 1995.
-                    </td><!--ROW 4-->
+                    </td>
                 </tr>
             </table>
-        </div>
+
+
+
+            <div class="row">
+              <div col></div>
+              <div></div>
+              <div></div>
+            </div>
+
+
     </div>
+<!-- 
+    <div class="container">
+        <div class="jumbotron">
+            <h4 class=" display-2">The Pioneer Stage Of Computer Science </h4>
+            <a href="https://www.youtube.com/watch?v=-M6lANfzFsM">Link</a>
+
+        </div>
+    </div> -->
+<!--VIDEO PlAY-->
+
+<section id="video-play">
+    <div class="dark-overlay">
+      <div class="row">
+        <div class="col">
+          <div class="container p-5">
+            <a href="#" class="video" data-video="https://www.youtube.com/embed/M61ANfzFzM" data-toggle="modal" data-target="#videoModal">
+              <i class="fas fa-play fa-3x"></i>
+            </a>
+            <h1>The Pioneer Stage of Computer Science:</h1>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </section>
+
+    <!-- VIDEO MODAL -->
+    
+<div class="modal fade" id="videoModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+          <iframe src="" frameborder="0" height="350" width="100%" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
-    <footer>
-        <p>Copyright &copy;</p>
-      </footer>
+
+  <!--JS SCRIPTS -->
+  <script>
+        // Video Play 
+     $(function () {
+      // Auto play modal video - -Snippet from stackoverflow, Solution.
+      $(".video").click(function () {
+        var theModal = $(this).data("target"),
+          videoSRC = $(this).attr("data-video"),
+          videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+        $(theModal + ' iframe').attr('src', videoSRCauto);
+        $(theModal + ' button.close').click(function () {
+          $(theModal + ' iframe').attr('src', videoSRC);
+        });
+      });
+    });
+  </script>
 </body>
 </html>

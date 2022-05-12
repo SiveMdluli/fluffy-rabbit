@@ -28,7 +28,9 @@
 
 <p id="demo"></p>
 
+<script>
 
+</script>
 <!--BODY SCRIPTS-->
 <script>
 x = "5" + 2 + 3;
@@ -56,7 +58,6 @@ document.getElementById("demo").innerHTML = x;
 
 <script>
 var cars = ["Toyota", "Volswagon", "Mahindra", "BMW", "Porche","ISUZU"];
-
   document.getElementById("demo").innerHTML = cars["5"];
 </script>
 
@@ -85,5 +86,86 @@ var cars = ["Toyota", "Volswagon", "Mahindra", "BMW", "Porche","ISUZU"];
   </script>
 
   <!--Practice JS concepts from notes In the morning Here!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!REMEMBER!!!!!!!!!FIRST THING!!!!!!ON WAKE!!!!!!!!!UP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+
+  <script>
+    var myNumber = 7;
+    var formattedNumber = (0 + myNumber).slice(-2);
+    console.log(formattedNumber);
+  </script>
+
+  <script>
+    //REPLACE() METHOD
+    str = "Sive if my first name";
+    var n = str.replace("first", "second");
+
+    document.getElementById("demo").innerHTML = n;
+  </script>
+
+  <script>
+    var name = "Sive";
+    document.getElementById('demo').innerHTML = name.charCodeAt(3);
+  </script>
+
+<script>
+  var myNumber = 2; 
+  var txt = "";
+  while (myNumber != Infinity) {
+     myNumber = myNumber * myNumber;
+     txt = txt + myNumber + "<br>";
+  }
+  document.getElementById("demo").innerHTML = txt;
+  </script>
+
+  <script>
+    var person = {
+      firstName:"Sive",
+      lastName:"Mdluli",
+      age: 19
+    };
+
+    document.getEmelentById("demo").innerHTML = person.age;
+  </script>
+
+
+<!--Using For Loop to loop on Arrays-->
+  <script>
+    var fruits, text, fLen, i;
+    fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fLen = fruits.length;
+
+    text = "<ul>";
+    for (i = 0; i < fLen; i++) {
+      text += "<li>" + fruits[i] + "</li>";
+    }
+    text += "</ul>";
+
+    document.getElementById("demo").innerHTML = text;
+  </script>
+<!--Using the forEach() method which calls a function for each array element-->
+  <script>
+    var fruits, text, fLen, i;
+    fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fLen = fruits.length;
+
+    text = "<ul>";
+    for (i = 0; i < fLen; i++) {
+      text += "<li>" + fruits[i] + "</li>";
+    }
+    text += "</ul>";
+    document.getElementById("demo").innerHTML = text;
+
+  </script>
+
+  <script>
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+    document.getElementById("demo1").innerHTML = fruits;
+    fruits.pop(); //this pops out removes the last element in an array
+    document.getElementById("demo2").innerHTML = fruits;
+  </script>
+  
+  <script>
+
+  </script>
 </body>
 </html>
