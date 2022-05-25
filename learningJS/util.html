@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!-- Using functions, objects, numbers and arrays to create a logical system.[PRACTICE] -->
+<body>
+
+    <button onclick="myFunction()">.</button><!--This one will work if I call "myfunction"-->
+    <button onclick="pFunction()">Click me</button>
+
+    <!-- Come back to change this 'demo1' into something relatable -->
+    <p id="demo1"></p> <!-- For executing origional code, to be changed by the fucntion we are working on -->
+
+    <p id="demo2"></p><!-- For showing the effect of a testef concept -->
+
+    <p id="demo3"></p><!-- For calling removed, changed or deleted items/elements -->
+    
+
+
+    <!-- SCRIPTS -->
+
+    <!-- Insert scripts that worck on a common goal in one script tag, 3rd indention style. -->
+
+    <script>
+        // Using a function and the length method to append an element in an array.
+        
+        var people = ['Sive', 'Sandiso', 'penuel']
+        document.getElementById("demo1").innerHTML = people;
+
+        function pFunction() {
+            people[people.length] = 'arron';
+            document.getElementById("demo1").innerHTML = people;
+        }
+
+        // Using the splice() and intergrating functions.
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo1").innerHTML = "Original Array:<br>" + fruits;
+        function myFunction() {
+            fruits.splice(2, 0, "Lemon", "Kiwi");
+            document.getElementById("demo2").innerHTML = "New Array:<br>" + fruits;
+        }
+    </script>
+</body>
+</html>
