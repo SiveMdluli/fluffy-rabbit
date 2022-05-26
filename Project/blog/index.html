@@ -20,8 +20,8 @@
         <header>
             <nav class="navbar navbar-expand-lg navbar-light py-4" style="background-color: #90EE90;" id="main-nav">
                 
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">
+                <div class="container-fluid"> <!--flex-row-reverse??-->
+                    <a class="navbar-brand end" href="index.html">
                         <h3 class="blogname">Blognewsletter</h3>
                     </a>
 
@@ -69,14 +69,18 @@
         </header>
 
     <!--Imagine Scholar Slider-->
-    <section id="showcase">
-        <div id="isCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
 
+    <section id="showcase">
+
+        <div id="isCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#isCarousel" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
+                    aria-current="true" aria-label="Slide 1">
+                </button>
 
-                <button type="button" data-bs-target="#isCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#isCarousel" data-bs-slide-to="1" aria-label="Slide 2">
+                    
+                </button>
 
                 <button type="button" data-bs-target="#isCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
@@ -107,11 +111,13 @@
                 </div>
             </div>
 
+            <!-- Previous button[Hidden on view] -->
+
             <button class="carousel-control-prev" type="button" data-bs-target="#isCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-
+            <!-- Next button[Hidden on view] -->
             <button class="carousel-control-next" type="button" data-bs-target="#isCarousel" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
