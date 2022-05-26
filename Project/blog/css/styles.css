@@ -1,13 +1,15 @@
 .navbar .navbar-brand {
-  color: #3fe43f;
+  color: #5ecb16
+;
   font-size: 24px;
+
   
 }
 
-.blogname {
-  /* font-family: 'Times New Roman', Times, serif; */
-  font-family: 'Raleway, Times New Roman, serif';
+.blogname:hover {
+  color: #49e949;
 }
+
 
 /* Syling fropdown */
 
