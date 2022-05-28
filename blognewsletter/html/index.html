@@ -8,6 +8,10 @@
     <meta name="author" content="" />
     <title>Blognewsletter</title>
 
+        <!-- Load Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+        crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -20,7 +24,14 @@
 
     <!--Navbar inside a header-->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light py-4" style="background-color: #90EE90;" id="main-nav">
+<!-- 
+        <style>
+            .carousel-inner>.item>img {
+                width: 100%;
+                height: 100vh;
+            }
+        </style> -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-4" style="background-color: #90EE90;" id="main-nav">
 
             <div class="container-fluid">
                 <!--flex-row-reverse??-->
@@ -50,11 +61,13 @@
 
                         <li class="nav-item dropdown">
                             <a href="" class="nav-link dropdown-toggle" href="assets/img/meetUs/gallery/index.html"
-                                id="navbarDropdown" role="button" data-bs-toggle="dropdown">Gallery</a>
+                                id="navbarDropdown" role="button" data-bs-toggle="dropdown">Meet Us!</a>
                             <div class="dropdown-menu">
-                                <a href="assets/img/meetUs/" class="dropdown-item">Tour Pics</a>
-                                <a href="" class="dropdown-item">Day-to-Day</a>
-                                <a href="" class="dropdown-item">Creative Writing</a>
+                                <a href="pages/meetUs/gallery.html" class="dropdown-item">Gallery</a>
+                                <a href="pages/meetUs/creativity.html" class="dropdown-item">Creativity</a>
+                                <a href="pages/meetUs/" class="dropdown-item">Lorem</a>
+                                <hr>
+                                <a href="pages/meetUs/" class="dropdown-item">Ipsum Lorem</a>
                             </div>
                         </li>
                         <li class="nav-item">
@@ -73,72 +86,90 @@
             </div>
 
         </nav>
+
+<!-- Carousel -->
+        <section id="showcase">
+            <div class="container">
+                <div id="selected-photos" class="carousel carousel-dark slide " data-bs-ride="carousel">
+
+                    <!--Dashes' indicators -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#selected-photos" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#selected-photos" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#selected-photos" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#selected-photos" data-bs-slide-to="3"></button>
+                    </div>
+
+                    <!-- The slideshow & Pictures -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../assets/img/carouserel/Slide 1.jpg" alt="Sitting around the fire"
+                            class=" img-fluid d-block carousel-pic-1 w-100">
+                            <!--My Carousel text-->
+                            <div class="carousel-caption d-none d-sm-block mb-5">
+                                <h3 class="display-3">Comm~u~nity</h3>
+                                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, eaque. Lorem
+                                    ipsum dolor sit amet consectetur adipisicing elit. Maxime, esse.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="../assets/img/carouserel/Slide 2.jpg" alt="Chicago" class="img-fluid d-block carousel-pic-2 w-100">
+                            <!-- My Crousel Text -->
+                            <div class="carousel-caption d-none d-sm-block mb-5">
+                                <h3 class="display-4 text-muted"> <i>Reading...</i></h3>
+                                <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+                                    eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, esse.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="../assets/img/carouserel/Slide 3.jpg" alt="New York" class="img-fluid d-block w-100 carousel-pic-3">
+                            <!-- Carousel Text -->
+                            <div class="carousel-caption d-none d-sm-block mb-5">
+                                <h3 class="display-3">Excellence!</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, eaque. Lorem ipsum dolor
+                                    sit amet consectetur adipisicing elit. Maxime, esse.</p>
+
+                                <!--This will lead to a picture where students talk & write about excellence, pictures?-->
+                                </p><a href="#another page" class="btn btn-outline-success btn-lg">See more...</a>
+
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="../assets/img/carouserel/Slide 4.jpg" alt="New York" class="img-fluid d-block carousel-pic-4 w-100">
+                            <!-- Carousel Text -->
+                            <div class="carousel-caption d-none d-sm-block mb-5">
+                                <h3 class="text-muted display-4">...?</h3>
+                                <p class="lead ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, eaque.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, esse.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls/icons -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#selected-photos" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#selected-photos" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </section>          
     </header>
 
-    <!--Imagine Scholar Slider-->
 
-    <section id="showcase">
 
-        <div id="isCarousel" class="carousel carousel-dark slide cssResize" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#isCarousel" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1">
-                </button>
 
-                <button type="button" data-bs-target="#isCarousel" data-bs-slide-to="1" aria-label="Slide 2">
 
-                </button>
 
-                <button type="button" data-bs-target="#isCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
 
-            <div class="conainer carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="assets/img/" class="d-block w-100" alt="Be kind art picture">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Kindness</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, perspiciatis.</p>
-                    </div>
-                </div>
 
-                <div class="container carousel-item" data-bs-interval="200">
-                    <img src="assets/img/carouserel/Slide 1.jpg" alt="" class="d-block">
 
-                </div>
-
-                <div class="container carousel-item" data-bs-interval="2000">
-                    <img src="assets/img/carouserel/Slide 2.jpg" class="d-block w-100"
-                        alt="Speeding car, simblifying Excellence">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Excellence</h5>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore cumque cum nulla maiores.
-                            Enim, unde!</p>
-                    </div>
-                </div>
-
-                <div class="container carousel-item">
-                    <img src="assets/img/carouserel/Slide 3.jpg" class="d-block w-100"
-                        alt="A picture to invoke a question within about RIGHT.">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>The Right thing</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, perferendis dolorum.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Previous button[Hidden on view] -->
-
-            <button class="carousel-control-prev" type="button" data-bs-target="#isCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <!-- Next button[Hidden on view] -->
-            <button class="carousel-control-next" type="button" data-bs-target="#isCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </section>
+   
 
 
     <!-- Page content-->
