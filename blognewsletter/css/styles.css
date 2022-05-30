@@ -1,48 +1,32 @@
 body {
-    overflow-x: hidden;
+    margin-top: 105px;
 }
 
+
+/* .navbar {
+    height: 10hv;
+    #b7ffb7 1
+} */
 
 .navbar {
-    height: 10vh;
+  box-shadow: 2px 2px 5px #3292a6;
+  opacity: 0.9;
+  background: #fff;
 }
-
-
 .navbar .navbar-brand {
-    color: #5ecb16;
+    color: #64c027;
     font-size: 24px;
 
 
 }
+ /* .navbar .nav-item {
+    font-size: 1.4rem;
+    padding-right: 1.4rem;
+}  */
 
 .blogname:hover {
-    color: #49e949;
+    color: #7fc74f;
 }
-
-.cssResize {
-    width: 300px;
-}
-
-hr {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-
-/* Carousel base class */
-.carousel {
-
-    height: 500px;
-    margin-bottom: 60px;
-}
-
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-    z-index: 10;
-}
-
  
  .carousel-item {
     height: 450px;
@@ -54,37 +38,5 @@ hr {
 
 } 
 
-.carousel-pic-1,
-.carousel-pic-2,
-.carousel-pic-3,
-.carousel-pic-4 {
-    background-size: cover;
-
-}
-
-
-/* 
-.w-100 {
-    width: 100% !important;
-    background-size: cover;
-}  */
-
-/* 
-p, .btn-outline {
-    color: #49e949;
-} */
-
-/* Syling fropdown */
-
-
-
-
-
-
-
-
-
-
-/* 
 
  

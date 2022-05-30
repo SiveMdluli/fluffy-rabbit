@@ -9,6 +9,9 @@
     <title>Blognewsletter</title>
 
         <!-- Load Bootstrap -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
         integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
         crossorigin="anonymous">
@@ -20,78 +23,70 @@
     <link href="../css/styles.css" rel="stylesheet" />
 </head>
 
-<body>
+<body class="container" id="home" >
+<header>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top py-4" style="background-color: #b7ffb7;" id="main-nav">
 
-    <!--Navbar inside a header-->
-    <header>
-<!-- 
-        <style>
-            .carousel-inner>.item>img {
-                width: 100%;
-                height: 100vh;
-            }
-        </style> -->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-4" style="background-color: #90EE90;" id="main-nav">
+        <div class="container-fluid">
 
-            <div class="container-fluid">
-                <!--flex-row-reverse??-->
-                <a class="navbar-brand end" href="index.html">
-                    <h3 class="blogname">Blognewsletter</h3>
-                </a>
+            <!--flex-row-reverse??-->
+            <a class="navbar-brand" href="index.html">
+                <h3 class="d-inline blogname">Blognewsletter</h3>
+            </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
-                    aria-controls="main-nav" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                aria-controls="main-nav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
 
 
-                <div class="collapse navbar-collapse" id="main-nav">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="ethos.html">Ethos</a>
-                        </li>
+            <div class="collapse navbar-collapse" id="main-nav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ethos.html">Ethos</a>
+                    </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="posts.html">Posts</a>
-                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="posts.html">Posts</a>
+                    </li>
 
-                        <li class="nav-item dropdown">
-                            <a href="" class="nav-link dropdown-toggle" href="assets/img/meetUs/gallery/index.html"
-                                id="navbarDropdown" role="button" data-bs-toggle="dropdown">Meet Us!</a>
-                            <div class="dropdown-menu">
-                                <a href="pages/meetUs/gallery.html" class="dropdown-item">Gallery</a>
-                                <a href="pages/meetUs/creativity.html" class="dropdown-item">Creativity</a>
-                                <a href="pages/meetUs/" class="dropdown-item">Lorem</a>
-                                <hr>
-                                <a href="pages/meetUs/" class="dropdown-item">Ipsum Lorem</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="Contact#" tabindex="-1" aria-disabled="true">Contact</a>
-                            <!--Cannot contact us -->
-                        </li>
-                    </ul>
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link dropdown-toggle" href="assets/img/meetUs/gallery/index.html"
+                            id="navbarDropdown" role="button" data-bs-toggle="dropdown">Gallery</a>
+                        <div class="dropdown-menu">
+                            <a href="assets/img/meetUs/" class="dropdown-item">Tour Pics</a>
+                            <a href="" class="dropdown-item">Day-to-Day</a>
+                            <a href="" class="dropdown-item">Creative Writing</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="Contact#" tabindex="-1" aria-disabled="true">Contact</a>
+                        <!--Cannot contact us -->
+                    </li>
+                </ul>
 
-                    <form class="d-flex flex-nowrap form-inline">
-                        <input class="form-control mr-sm-2 me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success  my-2 my-sm-0" type="submit">Search</button>
-                    </form>
-
-                </div>
+                <form class="d-flex flex-nowrap form-inline">
+                    <input class="form-control mr-sm-2 me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success  my-2 my-sm-0" type="submit">Search</button>
+                </form>
 
             </div>
 
-        </nav>
+        </div>
+
+    </nav>
+</header>
 
 <!-- Carousel -->
-        <section id="showcase">
-            <div class="container">
+    <section id="showcase">
+        <div class="container container-fluid">
+            <div class="primary-overlay text-white">
                 <div id="selected-photos" class="carousel carousel-dark slide " data-bs-ride="carousel">
-
+                
                     <!--Dashes' indicators -->
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#selected-photos" data-bs-slide-to="0" class="active"></button>
@@ -99,12 +94,12 @@
                         <button type="button" data-bs-target="#selected-photos" data-bs-slide-to="2"></button>
                         <button type="button" data-bs-target="#selected-photos" data-bs-slide-to="3"></button>
                     </div>
-
+                
                     <!-- The slideshow & Pictures -->
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="../assets/img/carouserel/Slide 1.jpg" alt="Sitting around the fire"
-                            class=" img-fluid d-block carousel-pic-1 w-100">
+                                class=" img-fluid d-block carousel-pic-1 w-100">
                             <!--My Carousel text-->
                             <div class="carousel-caption d-none d-sm-block mb-5">
                                 <h3 class="display-3">Comm~u~nity</h3>
@@ -112,9 +107,10 @@
                                     ipsum dolor sit amet consectetur adipisicing elit. Maxime, esse.</p>
                             </div>
                         </div>
-
+                
                         <div class="carousel-item">
-                            <img src="../assets/img/carouserel/Slide 2.jpg" alt="Chicago" class="img-fluid d-block carousel-pic-2 w-100">
+                            <img src="../assets/img/carouserel/Slide 2.jpg" alt="Chicago"
+                                class="img-fluid d-block carousel-pic-2 w-100">
                             <!-- My Crousel Text -->
                             <div class="carousel-caption d-none d-sm-block mb-5">
                                 <h3 class="display-4 text-muted"> <i>Reading...</i></h3>
@@ -122,33 +118,35 @@
                                     eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, esse.</p>
                             </div>
                         </div>
-
+                
                         <div class="carousel-item">
-                            <img src="../assets/img/carouserel/Slide 3.jpg" alt="New York" class="img-fluid d-block w-100 carousel-pic-3">
+                            <img src="../assets/img/carouserel/Slide 3.jpg" alt="New York"
+                                class="img-fluid d-block w-100 carousel-pic-3">
                             <!-- Carousel Text -->
                             <div class="carousel-caption d-none d-sm-block mb-5">
                                 <h3 class="display-3">Excellence!</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, eaque. Lorem ipsum dolor
                                     sit amet consectetur adipisicing elit. Maxime, esse.</p>
-
+                
                                 <!--This will lead to a picture where students talk & write about excellence, pictures?-->
                                 </p><a href="#another page" class="btn btn-outline-success btn-lg">See more...</a>
-
+                
                             </div>
                         </div>
-
+                
                         <div class="carousel-item">
-                            <img src="../assets/img/carouserel/Slide 4.jpg" alt="New York" class="img-fluid d-block carousel-pic-4 w-100">
+                            <img src="../assets/img/carouserel/Slide 4.jpg" alt="New York"
+                                class="img-fluid d-block carousel-pic-4 w-100">
                             <!-- Carousel Text -->
                             <div class="carousel-caption d-none d-sm-block mb-5">
                                 <h3 class="text-muted display-4">...?</h3>
                                 <p class="lead ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, eaque.
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, esse.</p>
-
+                
                             </div>
                         </div>
                     </div>
-
+                
                     <!-- Left and right controls/icons -->
                     <button class="carousel-control-prev" type="button" data-bs-target="#selected-photos" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon"></span>
@@ -158,22 +156,31 @@
                     </button>
                 </div>
             </div>
-        </section>          
-    </header>
-
-
-
-
-
-
-
-
-
-   
-
+            
+        </div>
+    </section> 
 
     <!-- Page content-->
 
+
+
+
+    <!--HOME HEADING SECTION-->
+    <section id="home-heading" class="p-5">
+        <div class="dark-overlay">
+            <div class="row">
+                <div class="col">
+                    <div class="container pt-5">
+                        <h1>Are You Ready To Get Started?</h1>
+                        <p class="d-none d-md-block">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas modi quaerat voluptatem
+                            reiciendis esse obcaecati, tempore odit corrupti nostrum quidem?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 

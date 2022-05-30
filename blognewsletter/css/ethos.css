@@ -1,0 +1,71 @@
+body {
+    margin-top: 105px;
+}
+
+.navbar {
+  box-shadow: 2px 2px 5px #3292a6;
+  opacity: 0.9;
+  background: #fff;
+}
+
+
+.navbar .navbar-brand {
+    color: #64c027;
+    font-size: 24px;
+
+
+}
+
+ /* .navbar .nav-item {
+     font-size: 1.4rem;
+     padding-right: 1.4rem;
+ } */
+
+.blogname:hover {
+    color: #7fc74f;
+}
+
+#page-header {
+    height: 300px;
+    background: url("../assets/img/bgphotos/dan-dealmeida-Qr0Dvl8YQtU-unsplash.jpg");
+    background-position: 0 -360px;
+    background-attachment: fixed;
+    color: #fff;
+    border-bottom: #eee solid;
+    padding: auto;
+
+}
+
+/* Now we set the playground for header, then: */
+#page-header .primary-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.about-img {
+    margin-top: -50px;
+    /*To go up, neative pixels*/
+}
+
+#home-heading {
+    position: relative;
+    min-height: 300px;
+    background: url('../assets/img/bgphotos/pen\ and\ notebook.jpg');
+    background-attachment: fixed;
+    text-align: center;
+    color: #fff;
+
+}
+
+.dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    /* For the image transparancy but dark*/
+}

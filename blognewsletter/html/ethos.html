@@ -13,29 +13,25 @@
 
 
     <!-- Core theme CSS -->
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="../css/ethos.css" rel="stylesheet" />
 </head>
 
-<body>
+<body  >
 
     <!--Navbar inside a header-->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light py-4" style="background-color: #90EE90;" id="main-nav">
-
+    <nav class="navbar navbar-expand-md navbar-light fixed-top py-4" style="background-color: #b7ffb7;" id="main-nav">
+    
             <div class="container-fluid">
                 <!--flex-row-reverse??-->
-                <a class="navbar-brand end" href="index.html">
-                    <h3 class="blogname">Blognewsletter</h3>
+                <a class="navbar-brand" href="index.html">
+                    <h3 class="d-inline blogname">Blognewsletter</h3>
                 </a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
-                    aria-controls="main-nav" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-
-
-                <div class="collapse navbar-collapse" id="main-nav">
+    
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+                <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
@@ -43,16 +39,16 @@
                         <li class="nav-item">
                             <a class="nav-link" href="ethos.html">Ethos</a>
                         </li>
-
+    
                         <li class="nav-item">
                             <a class="nav-link" href="posts.html">Posts</a>
                         </li>
-
+    
                         <li class="nav-item dropdown">
-                            <a href="" class="nav-link dropdown-toggle" href="assets/meetUs." id="navbarDropdown"
-                                role="button" data-bs-toggle="dropdown">Gallery</a>
+                            <a href="" class="nav-link dropdown-toggle" href="assets/img/meetUs/gallery/index.html"
+                                id="navbarDropdown" role="button" data-bs-toggle="dropdown">Gallery</a>
                             <div class="dropdown-menu">
-                                <a href="" class="dropdown-item">Tour Pics</a>
+                                <a href="assets/img/meetUs/" class="dropdown-item">Tour Pics</a>
                                 <a href="" class="dropdown-item">Day-to-Day</a>
                                 <a href="" class="dropdown-item">Creative Writing</a>
                             </div>
@@ -62,21 +58,55 @@
                             <!--Cannot contact us -->
                         </li>
                     </ul>
-
+    
                     <form class="d-flex flex-nowrap form-inline">
                         <input class="form-control mr-sm-2 me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success  my-2 my-sm-0" type="submit">Search</button>
                     </form>
-
+    
                 </div>
-
+    
             </div>
-
+    
         </nav>
+
+
+    <!-- PAGE HEADER-->
+    <header id="page-header" class="py-4">
+        <div class="primary-overlay text-white">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 m-auto text-center">
+                            <h1>Ethos</h1>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste rem quidem in amet beatae deserunt itaque
+                                delectus!</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
     </header>
 
 
+<section id="ethos" class="strick -toppy-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="display-4">
+                    Our values & Culture
+                </h2>
 
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex incidunt atque, corrupti necessitatibus recusandae exercitationem voluptatem consequatur iste quaerat dolorem pariatur, natus blanditiis laboriosam quia.
+
+                </p>
+            </div>
+
+            <div class="col-md-6">
+                <img src="../assets/img/bgphotos/toy.jpg" alt="" class="img-fluid rounded-circle d-none d-md-block about-img">
+            </div>
+        </div>
+    </div>
+</section>
 
 
 
