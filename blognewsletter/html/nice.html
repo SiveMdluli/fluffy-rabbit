@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
         integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/nice.css">
     <title>Bootstrap Theme</title>
 </head>
 
@@ -54,58 +54,118 @@
         </div>
     </nav>
 
+
+
+    <section id="hero">
+        <div class="heroCarousel">
+            
+<ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+<div class="carousel-inner" role="listbox">
+    <!-- Slide 1 -->
+    <div class="carousel-item active" style="background-image: url(../assets/img/bgphotos/car.png)">
+        <div class="carousel-container">
+            <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Blognewsletter</span>
+                </h2>
+                <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui
+                    aliquid. Sequi ea ut
+                    et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut.
+                    Similique ea voluptatem.
+                    Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi
+                    architecto.</p>
+                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </section>
     <!--SHOWCASE SLIDER-->
     <section id="showcase">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item carousel-image-1 active">
-                    <div class="container">
-                        <!--Everything INSIDE is PUSHED TO MIDDLE-->
-                        <div class="carousel-caption d-none d-sm-block text-right mb-5">
-                            <h1 class="display-3">Heading One</h1>
-                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam inventore
-                                provident cupiditate nihil hic quisquam eaque alias illo voluptatum dolorum.</p>
-                            <a href="#" class="btn btn-danger btn-lg">Sign Up Now</a>
+        <div class="container container-fluid">
+            <div class="primary-overlay text-white">
+                <div id="selected-photos" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
+    
+                    <!--Dashes' indicators -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#selected-photos" data-bs-slide-to="0"
+                            class="active"></button>
+                        <button type="button" data-bs-target="#selected-photos" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#selected-photos" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#selected-photos" data-bs-slide-to="3"></button>
+                    </div>
+                    
+    
+                    <!-- The slideshow & Pictures -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../assets/img/carouserel/Slide 1.jpg" alt="Sitting around the fire"
+                                class=" img-fluid d-block carousel-pic-1 w-100">
+    
+                            <!--My Carousel text-->
+                            <div class="carousel-caption d-none d-sm-block mb-5">
+                                <h3 class="display-3">Comm~u~nity</h3>
+                                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, eaque.
+                                    Lorem
+                                    ipsum dolor sit amet consectetur adipisicing elit. Maxime, esse.</p>
+                            </div>
+                        </div>
+    
+                        <div class="carousel-item">
+                            <img src="../assets/img/carouserel/Slide 2.jpg" alt="Chicago"
+                                class="img-fluid d-block carousel-pic-2 w-100">
+                            <!-- My Crousel Text -->
+                            <div class="carousel-caption d-none d-sm-block mb-5">
+                                <h3 class="display-4 text-muted"> <i>Reading...</i></h3>
+                                <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Explicabo,
+                                    eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, esse.</p>
+                            </div>
+                        </div>
+    
+                        <div class="carousel-item">
+                            <img src="../assets/img/carouserel/Slide 3.jpg" alt="New York"
+                                class="img-fluid d-block w-100 carousel-pic-3">
+                            <!-- Carousel Text -->
+                            <div class="carousel-caption d-none d-sm-block mb-5">
+                                <h3 class="display-3">Excellence!</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, eaque. Lorem ipsum
+                                    dolor
+                                    sit amet consectetur adipisicing elit. Maxime, esse.</p>
+    
+                                <!--This will lead to a picture where students talk & write about excellence, pictures?-->
+                                </p><a href="#another page" class="btn btn-outline-success btn-lg">See more...</a>
+    
+                            </div>
+                        </div>
+    
+                        <div class="carousel-item">
+                            <img src="../assets/img/carouserel/Slide 4.jpg" alt="New York"
+                                class="img-fluid d-block carousel-pic-4 w-100">
+                            <!-- Carousel Text -->
+                            <div class="carousel-caption d-none d-sm-block mb-5">
+                                <h3 class="text-muted display-4">...?</h3>
+                                <p class="lead ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, eaque.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, esse.</p>
+    
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="carousel-item carousel-image-2 ">
-                    <div class="container">
-                        <!--Everything INSIDE is PUSHED TO MIDDLE-->
-                        <div class="carousel-caption d-none d-sm-block mb-5">
-                            <h1 class="display-3">Heading Two</h1>
-                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam inventore
-                                provident cupiditate nihil hic quisquam eaque alias illo voluptatum dolorum.</p>
-                            <a href="#" class="btn btn-primary btn-lg">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-item carousel-image-3 ">
-                    <div class="container">
-                        <!--Everything INSIDE is PUSHED TO MIDDLE-->
-                        <div class="carousel-caption d-none d-sm-block text-right mb-5">
-                            <h1 class="display-3">Heading Three</h1>
-                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam inventore
-                                provident cupiditate nihil hic quisquam eaque alias illo voluptatum dolorum.</p>
-                            <a href="#" class="btn btn-success btn-lg">More...</a>
-                        </div>
-                    </div>
+    
+                    <!-- Left and right controls/icons -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#selected-photos"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#selected-photos"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
                 </div>
             </div>
-            <a href="#myCarousel" data-slide="prev" class="carousel-control-prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-
-            <a href="#myCarousel" data-slide="next" class="carousel-control-next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
+    
         </div>
     </section>
 

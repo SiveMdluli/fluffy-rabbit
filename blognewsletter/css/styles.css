@@ -1,18 +1,15 @@
 body {
     margin-top: 105px;
+    overflow: hidden;
 }
-
 
 /* .navbar {
     height: 10hv;
     #b7ffb7 1
+
+    #b7ffb7
 } */
 
-.navbar {
-  box-shadow: 2px 2px 5px #3292a6;
-  opacity: 0.9;
-  background: #fff;
-}
 .navbar .navbar-brand {
     color: #64c027;
     font-size: 24px;
@@ -27,16 +24,306 @@ body {
 .blogname:hover {
     color: #7fc74f;
 }
+.blogname {
+    font-family: 'Raleway', sans-serif;
+}
  
- .carousel-item {
-    height: 450px;
+#hero .btn-get-started {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 4px;
+    transition: 0.5s;
+    line-height: 1;
+    color: #fff;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    background: #5cb874;
+}
+
+#hero .btn-get-started:hover {
+    background: #6ec083;
+}
+
+@media (max-width: 992px) {
+    #hero {
+        height: 100vh;
+    }
+
+#showcase:before {
+    object-fit: cover;
     width: 100%;
-    background-color: #777;
+
+}
+#carouselHero .carousel-item img {
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    height: 100vh;
+}
+
+#carouselHero .carousel-item:before {
+    content: "";
+    background-image:
+        linear-gradient(to bottom,
+            transparent, rgba(0, 0, 0, 0.5));
+    display: block;
+    position: absolute;
     top: 0;
-    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#showcase .carousel-control-next-icon:hover,
+#showcase .carousel-control-prev-icon:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#showcase .carousel-indicators li {
+    cursor: pointer;
+    background: #fff;
+    overflow: hidden;
+    border: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+#showcase .carousel-indicators li.active {
+    opacity: 1;
+    background: #5cb874;
+}
+
+
+
+
+/* General styles for my sections */
+
+section {
+    padding: 60px 0;
+}
+
+.section-bg {
+    background-color: #f8fcf9;
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.section-title h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #5cb874;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+
+.section-title p {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #919191;
+}
+
+/* Featured Blog section styles */
+.featured-blog .icon-box-bg {
+    background-image: linear-gradient(0deg, #222222 0%, #2f2f2f 50%, #222222 100%);
+}
+
+.featured-blog .icon {
+    margin-bottom: 15px;
+}
+
+.featured-blog .icon i {
+    color: #5cb874;
+    font-size: 42px;
+}
+
+.featured-blog .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.featured-blog .title a {
+    color: #222222;
+    transition: 0.3s;
+}
+
+.featured-blog .icon-box:hover .title a {
+    color: #5cb874;
+}
+
+.featured-blog .description {
+    line-height: 24px;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# showcase Section
+--------------------------------------------------------------*/
+#showcase {
+    width: 100%;
+    height: 70vh;
+    background-color: rgba(9, 9, 9, 0.8);
+    overflow: hidden;
+    position: relative;
+}
+
+#showcase .carousel,
+#showcase .carousel-inner,
+#showcase .carousel-item,
+#showcase .carousel-item::before {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
     right: 0;
+    left: 0;
+    bottom: 0;
+}
 
-} 
+#showcase .carousel-item::before {
+    content: "";
+    background-color: rgba(171, 249, 192, 0.8);
+}
 
+#showcase .carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 50px;
+    right: 50px;
+}
+
+#showcase .container {
+    text-align: center;
+}
+
+#showcase h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+#showcase p {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+    margin: 0 auto 30px auto;
+    color: #fff;
+}
+
+#showcase .carousel-inner .carousel-item {
+    transition-property: opacity;
+    background-position: center top;
+}
+
+#showcase .carousel-inner .carousel-item,
+#showcase .carousel-inner .active.carousel-item-start,
+#showcase .carousel-inner .active.carousel-item-end {
+    opacity: 0;
+}
+
+#showcase .carousel-inner .active,
+#showcase .carousel-inner .carousel-item-next.carousel-item-start,
+#showcase .carousel-inner .carousel-item-prev.carousel-item-end {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#showcase .carousel-control-next-icon,
+#showcase .carousel-control-prev-icon {
+    background: none;
+    font-size: 30px;
+    line-height: 0;
+    width: auto;
+    height: auto;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    transition: 0.3s;
+    color: rgba(255, 255, 255, 0.5);
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#showcase .carousel-control-next-icon:hover,
+#showcase .carousel-control-prev-icon:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#showcase .carousel-indicators li {
+    cursor: pointer;
+    background: #fff;
+    overflow: hidden;
+    border: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+#showcase .carousel-indicators li.active {
+    opacity: 1;
+}
 
  
