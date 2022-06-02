@@ -3,61 +3,23 @@ body {
     overflow: hidden;
 }
 
-/* .navbar {
-    height: 10hv;
-    #b7ffb7 1
-
-    #b7ffb7
-} */
-
 .navbar .navbar-brand {
     color: #64c027;
     font-size: 24px;
 
 
 }
- /* .navbar .nav-item {
-    font-size: 1.4rem;
-    padding-right: 1.4rem;
-}  */
+
+
+.blogname {
+    font-family: 'Raleway', sans-serif;
+}
 
 .blogname:hover {
     color: #7fc74f;
 }
-.blogname {
-    font-family: 'Raleway', sans-serif;
-}
- 
-#hero .btn-get-started {
-    font-family: "Raleway", sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 14px 32px;
-    border-radius: 4px;
-    transition: 0.5s;
-    line-height: 1;
-    color: #fff;
-    -webkit-animation-delay: 0.8s;
-    animation-delay: 0.8s;
-    background: #5cb874;
-}
 
-#hero .btn-get-started:hover {
-    background: #6ec083;
-}
 
-@media (max-width: 992px) {
-    #hero {
-        height: 100vh;
-    }
-
-#showcase:before {
-    object-fit: cover;
-    width: 100%;
-
-}
 #carouselHero .carousel-item img {
     object-fit: cover;
     object-position: center;
@@ -79,25 +41,8 @@ body {
 
 #showcase .carousel-control-next-icon:hover,
 #showcase .carousel-control-prev-icon:hover {
-    background: rgba(255, 255, 255, 0.3);
+    background: transparent;
     color: rgba(255, 255, 255, 0.8);
-}
-
-#showcase .carousel-indicators li {
-    cursor: pointer;
-    background: #fff;
-    overflow: hidden;
-    border: 0;
-    width: 12px;
-    height: 12px;
-    border-radius: 50px;
-    opacity: 0.6;
-    transition: 0.3s;
-}
-
-#showcase .carousel-indicators li.active {
-    opacity: 1;
-    background: #5cb874;
 }
 
 
@@ -196,19 +141,6 @@ section {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*--------------------------------------------------------------
 # showcase Section
 --------------------------------------------------------------*/
@@ -261,69 +193,11 @@ section {
     font-weight: 700;
 }
 
-#showcase p {
-    -webkit-animation-delay: 0.4s;
-    animation-delay: 0.4s;
-    margin: 0 auto 30px auto;
-    color: #fff;
-}
-
 #showcase .carousel-inner .carousel-item {
     transition-property: opacity;
     background-position: center top;
 }
 
-#showcase .carousel-inner .carousel-item,
-#showcase .carousel-inner .active.carousel-item-start,
-#showcase .carousel-inner .active.carousel-item-end {
-    opacity: 0;
-}
 
-#showcase .carousel-inner .active,
-#showcase .carousel-inner .carousel-item-next.carousel-item-start,
-#showcase .carousel-inner .carousel-item-prev.carousel-item-end {
-    opacity: 1;
-    transition: 0.5s;
-}
-
-#showcase .carousel-control-next-icon,
-#showcase .carousel-control-prev-icon {
-    background: none;
-    font-size: 30px;
-    line-height: 0;
-    width: auto;
-    height: auto;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 50px;
-    transition: 0.3s;
-    color: rgba(255, 255, 255, 0.5);
-    width: 54px;
-    height: 54px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#showcase .carousel-control-next-icon:hover,
-#showcase .carousel-control-prev-icon:hover {
-    background: rgba(255, 255, 255, 0.3);
-    color: rgba(255, 255, 255, 0.8);
-}
-
-#showcase .carousel-indicators li {
-    cursor: pointer;
-    background: #fff;
-    overflow: hidden;
-    border: 0;
-    width: 12px;
-    height: 12px;
-    border-radius: 50px;
-    opacity: 0.6;
-    transition: 0.3s;
-}
-
-#showcase .carousel-indicators li.active {
-    opacity: 1;
-}
 
  
