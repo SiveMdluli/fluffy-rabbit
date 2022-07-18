@@ -2,7 +2,8 @@ const computerChoiceDisplay = document.getElementById('computer-choice')
 const userChoiceDisplay = document.getElementById('user-choice')
 const resultDisplay = document.getElementById('result')
 const possibleChoices  = document.querySelectorAll('button')
-let userChoice //declared to be used in the multiple events
+let userChoice //declared to be used in the multiple events[acsess anywhere]
+let computerChoice
 let result
 
 
@@ -16,7 +17,7 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
 }))
 
 function generateComputerChoice() {
-    const randomNumber = Math.floor(Math.random() * 3) + 1
+    const randomNumber = Math.floor(Math.random() * 3) + 1 //[ ||possibleChoices.length]
 
     if (randomNumber === 1) {
         computerChoice = 'rock'
@@ -30,7 +31,7 @@ function generateComputerChoice() {
         computerChoice  = 'paper'
     }
 
-    computerChoiceDisplay.innerHTML = computerChoice
+    computerChoiceDisplay.innerHTML = computerChoice //getting/calling our computer choice in the inner html
 }
 
 function getResults() {
