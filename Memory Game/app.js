@@ -1,4 +1,4 @@
-// document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
 //mY CARD OPTIONS FOR MATCHING
 const myCardArray = [
 
@@ -158,21 +158,4 @@ function flipCard() {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// })
+})
