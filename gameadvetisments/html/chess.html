@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/splendor.css">
+
+    <title>BoadgamesWebsite</title>
+</head>
+
+
+<body>
+  <header>
+      <nav class="navbar fixed-top">
+        <!-- img-fluid rounded-circle d-none d-md-block about-img -->
+          <!-- LOGO -->
+          <div class="nav-brand">
+            <img src="../img/bgr-logo-image.jpg" alt="web-logo" class="img-fluid rounded-circle logo-image">
+          </div>
+
+          <ul class="nav-links">
+            <!-- Check Box Hack -->
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+            <!-- NAVIGATION MENUS -->
+            <div class="menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="../index.html#about-us">About Us</a></li>
+              <li><a href="../index.html#our-rating">Our Rating</a></li>
+
+              <li class="catalogue">
+                <a href="#">Catalogue</a>
+                <ul class="dropdown">
+                  <li><a href="splendor.html">Splendor </a></li>
+                  <li><a href="kot.html">KOT</a></li>
+                  <li><a href="chess.html">Chess</a></li>
+                  
+                  <!-- More dropdown items... -->
+                </ul>
+              </li>
+              <li><a href="#YetToBeDet">Contact</a></li>
+            </div>
+          </ul>
+
+        </nav>
+  </header>
+
+
+
+<section id="page-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 m-auto text-center">
+        <!-- relevant bg-img & allows readibility of content -->
+        <h1 class="display-4">Splendor</h1>
+        <p class="lead">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas suscipit dolor atque, alias ut perspiciatis. Quia exercitationem provident id similique eaque laboriosam explicabo dignissimos officiis?
+        </p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+    <!--ABOUT SECTION >>>> Two Colomn div-->
+
+    <!-- 
+      *Picture must react upon hover[Pop in/zoom-in].
+      *
+     -->
+  <section id="card-picture-display">
+    <div class="container">
+      <div class="row">
+        <div class="card">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+    <!-- Main Footer -->
+<footer id = "main-footer" class="bg-dark">
+  <div class="container">
+    <div class="row">
+      <div class="col text-white text-center py-4">
+        <h3>BGR</h3>
+        <p>Copyright &copy;
+          <span id="year"></span>
+        </p>
+
+<!-- a separate page to our biography -->
+        <button class="btn btn-outline-primary">
+          Meet Us
+        </button>
+      </div>
+    </div>
+  </div>
+  
+</footer>
+
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+
+<!--Snippets acting as Modals[bs5Ref] -->
+<script>
+  // Get the current year for the copyright
+  $('year').text(new Date().getFullYear());
+
+  // Smooth Scrolling and Scrollspy
+</script>
+
+</html>
