@@ -31,7 +31,6 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#about-us">About Us</a></li>
                 <li><a href="#our-rating">Our Rating</a></li>
-
                 <li class="catalogue">
                   <a href="#">Catalogue</a>
                   <ul class="dropdown">
@@ -40,25 +39,49 @@
                     <li><a href="chess.html">Chess</a></li>
                   </ul>
                 </li>
-
                 <li><a href="/">Contact</a></li>
               </div>
             </ul>
-
           </nav>
     </header>
 
 
-        <!--ABOUT SECTION >>>> Two Colomn div-->
-    <div  id="about-us" class=" bg-light py-5">
+
+<!-- CAROUSEL -->
+<!--SHOWCASE SLIDER-->
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/carouselthree.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/carouselone.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/carouseltwo.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<!--ABOUT SECTION >>>> Two Colomn div-->
+    <section  id="about-us" class=" bg-light py-5">
       <div class="container">
         <div class="section-tittle">
           <h2 class="text-center">About Us</h2>
-          <p class="text-center lead text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo assumenda sequi qui sed fugiat vel quidem earum. Id!</p>
+          <p class="text-center lead text-muted">This is a team-effort website that we are using as prctice to apply our skills. We  </p>
         </div>
           <div class="row">
               <div class="col-md-6">
-                  <h1 class=" text-center">What We Do</h1>
+                  <h3 class=" text-center">What We Do</h3>
                   <p class=" text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae hic deleniti illo ab ratione, aspernatur odio. Eos minus aliquid, adipisci placeat rerum accusantium amet labore ea facilis ducimus laudantium voluptates quaerat expedita sit!</p>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vitae est sit ut perferendis sint quibusdam possimus architecto vel! Unde optio autem aperiam libero voluptatem.</p>
@@ -71,9 +94,11 @@
               </div>
           </div>
       </div>
-    </div>
+    </section>
 
-    <section id="our-rating py-5">
+
+    <!-- RATING CARDS SECTION [Add A button] -->
+    <section id="our-rating" class="">
         <div class="container">
 
           <div class="section-tittle">
@@ -92,11 +117,9 @@
                             <h1>Splendor</h1>
                             <p>Top of Our Boardgames list</p>
                             <p>lorem15 klewmlkmrpo  lwkmk l2mwekreml kemrl43m</p>
+                            <a href="html/splendor.html" class="btn btn-outline-info" id="moreButton">More...</a>
                           </div>
                           <div class="flip-cards">
-                            <a href="html/splendor.html">
-                              <button class="btn btn-outline-info center">More</button>
-                            </a>
                           </div>
                         </div>
                       </div>
@@ -109,14 +132,13 @@
                             <img src="img/flip-card-demo-piv.jpg" alt="Avatar" style="width:350px;height:300px;">
                           </div>
                           <div class="flip-card-back">
-                            <h1>Splendor</h1>
-                            <p>Top of Our Boardgames list</p>
+                            <h1>Kings of Tokyo</h1>
+                            <p>Kings Of Tokyo is...</p>
                             <p>lorem15 klewmlkmrpo  lwkmk l2mwekreml kemrl43m</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus nemo quisquam labore eius.</p>
+                            <a href="html/kot.html" class="btn btn-outline-info" id="moreButton">More...</a>
                           </div>
                           <div class="flip-cards">
-                            <a href="html/kot.html">
-                              <button class="btn btn-outline-info center">More</button>
-                            </a>
                           </div>
                         </div>
                       </div>
@@ -129,14 +151,12 @@
                             <img src="img/flip-card-demo-piv.jpg" alt="Avatar" style="width:350px;height:300px;">
                           </div>
                           <div class="flip-card-back">
-                            <h1>Splendor</h1>
-                            <p>Top of Our Boardgames list</p>
-                            <p>lorem15 klewmlkmrpo  lwkmk l2mwekreml kemrl43m</p>
+                            <h1>Chess</h1>
+                            <p>Chess is our most commonly played game</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus mollitia fuga rem veniam quod temporibus?</p>
+                            <a href="html/chess.html" class="btn btn-outline-info" id="moreButton">More...</a>
                           </div>
                           <div class="flip-cards">
-                            <a href="html/splendor.html">
-                              <button class="btn btn-outline-info center">More</button>
-                            </a>
                           </div>
                         </div>
                       </div>
@@ -151,14 +171,12 @@
                           <img src="img/flip-card-demo-piv.jpg" alt="Avatar" style="width:350px;height:300px;">
                         </div>
                         <div class="flip-card-back">
-                          <h1>Splendor</h1>
+                          <h1>Manchi Koru</h1>
                           <p>Top of Our Boardgames list</p>
                           <p>lorem15 klewmlkmrpo  lwkmk l2mwekreml kemrl43m</p>
+                          <a href="html/splendor.html" class="btn btn-outline-info" id="moreButton">More...</a>
                         </div>
                         <div class="flip-cards">
-                          <a href="html/kot.html">
-                            <button class="btn btn-outline-info center">More</button>
-                          </a>
                         </div>
                       </div>
                     </div>
@@ -171,14 +189,12 @@
                           <img src="img/flip-card-demo-piv.jpg" alt="Avatar" style="width:350px;height:300px;">
                         </div>
                         <div class="flip-card-back">
-                          <h1>Splendor</h1>
+                          <h1>One other</h1>
                           <p>Top of Our Boardgames list</p>
                           <p>lorem15 klewmlkmrpo  lwkmk l2mwekreml kemrl43m</p>
+                          <a href="html/oneother.html" class="btn btn-outline-info" id="moreButton">More...</a>
                         </div>
                         <div class="flip-cards">
-                          <a href="html/splendor.html">
-                            <button class="btn btn-outline-info center">More</button>
-                          </a>
                         </div>
                       </div>
                     </div>
@@ -191,14 +207,12 @@
                           <img src="img/flip-card-demo-piv.jpg" alt="Avatar" style="width:350px;height:300px;">
                         </div>
                         <div class="flip-card-back">
-                          <h1>Splendor</h1>
+                          <h1>One Other</h1>
                           <p>Top of Our Boardgames list</p>
                           <p>lorem15 klewmlkmrpo  lwkmk l2mwekreml kemrl43m</p>
+                          <a href="html/oneMore.html" class="btn btn-outline-info" id="moreButton">More...</a>
                         </div>
                         <div class="flip-cards">
-                          <a href="html/kot.html">
-                            <button class="btn btn-outline-info center">More</button>
-                          </a>
                         </div>
                       </div>
                     </div>
@@ -206,7 +220,6 @@
           </div>
         </div>
     </section>
-
 
 
 
@@ -220,21 +233,26 @@
               <span id="year"></span>
             </p>
     <!-- a separate page to our biography -->
-            <button class="btn btn-outline-primary">
-              Meet Us
-            </button>
+            <a href="meet/index.html" class="meet">
+              <button  class="btn btn-outline-primary">
+                Meet Us
+              </button>
+            </a>
           </div>
         </div>
       </div>
     </footer>
-
 
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 
+<!-- 
+  *ADOBE COLORS 
+  *Box-shaddow
 
+-->
 
 <script>
   // Get the current year for the copyright
@@ -243,6 +261,20 @@
   // Smooth Scrolling and Scrollspy
 
 
+
+  $(document).ready(function(){       
+        var scroll_pos = 0;
+        $(document).scroll(function() { 
+            scroll_pos = $(this).scrollTop();
+            if(scroll_pos > 210) {
+                $('.hvr-reveal').css('color', '#000');
+            } else {
+                $('.hvr-reveal').css('color', '#fff');
+            }
+        });
+    });
 </script>
+
+
 
 </html>
